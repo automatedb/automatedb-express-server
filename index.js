@@ -1,3 +1,7 @@
 const Server = require('./app/libs/Server');
+const Response = require('./app/libs/Response');
 
-module.exports = Server;
+module.exports = {
+    Server,
+    Response
+};
