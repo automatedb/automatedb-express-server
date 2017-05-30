@@ -1,7 +1,7 @@
 {
-  "name": "express-server",
+  "name": "automatedb-express-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Create a server with express",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -9,7 +9,11 @@
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --recursive"
   },
-  "author": "",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/automatedb/express-server"
+  },
+  "author": "Automatedb",
   "license": "ISC",
   "devDependencies": {
     "expect": "^1.20.2",
