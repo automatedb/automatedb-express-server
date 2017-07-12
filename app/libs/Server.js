@@ -2,6 +2,7 @@ const path = require('path');
 const _ = require('underscore');
 const express = require('express');
 const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
 const cors = require('cors');
 
 class Server {
@@ -13,6 +14,7 @@ class Server {
         this._app = express();
 
         this._app.use(cors());
+        this._app.use(cookieParser());
         this._app.use(bodyParser.json());
         this._app.use(bodyParser.urlencoded({
             extended: false
